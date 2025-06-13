@@ -1621,7 +1621,7 @@ body {
 
 @media (max-width: 992px) {
   .about-us{
-    height: 70vh;
+    height: 100vh;
   }
   .header-area .main-nav .nav li:last-child {
     display: none;
@@ -1633,9 +1633,11 @@ body {
     background-color: #212741;
   }
   .slide-inner .header-text {
+    padding-top: 0  ;
     width: 80%;
   }
   .slide-inner .header-text h2 {
+    padding-top: 10px;
     font-size: 30px;
     line-height: 40px;
   }
