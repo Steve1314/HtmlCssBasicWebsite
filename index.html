@@ -249,113 +249,147 @@
   </section>
 
 
-  <section class="flex flex-col  lg:flex-row gap-10 max-w-7xl mx-auto md:px-6 px-2 py-16">
+<section class="flex flex-col lg:flex-row gap-10 max-w-7xl mx-auto md:px-6 px-2 py-16">
+  <!-- Left: Tabs & Content -->
+  <div class="flex-1">
+    <h2 class="text-center text-3xl font-bold mb-6">Know Us Better</h2>
 
-    <div class="flex-1 items-center">
-      <!-- [RADIO INPUTS] -->
-      <h2 class="text-center text-3xl font-bold mb-4">Know Us Better</h2>
-    
-        <input type="radio" name="tabs" id="tab1" checked>
-        <input type="radio" name="tabs" id="tab2">
-        <input type="radio" name="tabs" id="tab3">
-      <!-- [TAB LABELS] -->
-      <div class="tab-labels">
-        <label for="tab1">Web Design</label>
-        <label for="tab2">Graphics</label>
-        <label for="tab3">Web Coding</label>
+    <!-- Radio Inputs -->
+    <input type="radio" name="tabs" id="tab1" class="hidden" checked>
+    <input type="radio" name="tabs" id="tab2" class="hidden">
+    <input type="radio" name="tabs" id="tab3" class="hidden">
+
+    <!-- Tab Labels -->
+    <div class="tab-labels flex flex-col sm:flex-row gap-3 justify-center mb-6">
+      <label for="tab1" class="cursor-pointer text-center bg-white px-6 py-2 rounded shadow hover:bg-green-100 transition">Web Design</label>
+      <label for="tab2" class="cursor-pointer text-center bg-white px-6 py-2 rounded shadow hover:bg-green-100 transition">Graphics</label>
+      <label for="tab3" class="cursor-pointer text-center bg-white px-6 py-2 rounded shadow hover:bg-green-100 transition">Web Coding</label>
+    </div>
+
+    <!-- Tab Content -->
+    <div class="space-y-6">
+      <!-- Tab 1 -->
+      <div class="tab-content" id="content1">
+        <!-- Table for Desktop -->
+        <table class="hidden md:table w-full text-left border border-gray-200 mb-4">
+          <thead class="bg-gray-100">
+            <tr>
+              <th class="p-2 border">Project Title</th>
+              <th class="p-2 border">Budget</th>
+              <th class="p-2 border">Deadline</th>
+              <th class="p-2 border">Client</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t">
+              <td class="p-2 border"><a href="#">Website Redesign</a></td>
+              <td class="p-2 border">$1,500 to $2,200</td>
+              <td class="p-2 border">2022 Dec 12</td>
+              <td class="p-2 border">Web Biz</td>
+            </tr>
+            <tr class="border-t">
+              <td class="p-2 border"><a href="#">All-new Website</a></td>
+              <td class="p-2 border">$3,000 to $6,600</td>
+              <td class="p-2 border">2022 Dec 2</td>
+              <td class="p-2 border">Web Presence</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Cards for Mobile -->
+        <div class="md:hidden space-y-4">
+          <div class="bg-white p-4 rounded shadow">
+            <h5 class="font-semibold">Website Redesign</h5>
+            <p><strong>Budget:</strong> $1,500 to $2,200</p>
+            <p><strong>Deadline:</strong> 2022 Dec 12</p>
+            <p><strong>Client:</strong> Web Biz</p>
+          </div>
+          <div class="bg-white p-4 rounded shadow">
+            <h5 class="font-semibold">All-new Website</h5>
+            <p><strong>Budget:</strong> $3,000 to $6,600</p>
+            <p><strong>Deadline:</strong> 2022 Dec 2</p>
+            <p><strong>Client:</strong> Web Presence</p>
+          </div>
+        </div>
       </div>
-      <!-- [TAB CONTENT] -->
-      <div class="tab-content">
-        <!-- Tab 1 -->
-        <div id="content1" class="tab">
-          <table>
-            <thead>
-              <tr>
-                <th>Project Title</th>
-                <th>Budget</th>
-                <th>Deadline</th>
-                <th>Client</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><a href="#">Website Redesign</a></td>
-                <td>$1,500 to $2,200</td>
-                <td>2022 Dec 12</td>
-                <td>Web Biz</td>
-              </tr>
-              <tr>
-                <td><a href="#">All-new Website</a></td>
-                <td>$3,000 to $6,600</td>
-                <td>2022 Dec 2</td>
-                <td>Web Presence</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <!-- Tab 2 -->
-        <div id="content2" class="tab">
-          <table>
-            <thead>
-              <tr>
-                <th>Project Title</th>
-                <th>Budget</th>
-                <th>Deadline</th>
-                <th>Client</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><a href="#">Digital Graphics</a></td>
-                <td>$1,500 to $3,000</td>
-                <td>2022 Nov 18</td>
-                <td>Second Media</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
 
-        <!-- Tab 3 -->
-        <div id="content3" class="tab">
-          <table>
-            <thead>
-              <tr>
-                <th>Project Title</th>
-                <th>Budget</th>
-                <th>Estimated</th>
-                <th>Technology</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><a href="#">New Web App</a></td>
-                <td>$1,500 to $3,000</td>
-                <td>2022 Nov 18</td>
-                <td>Python Programe</td>
-              </tr>
-            </tbody>
-          </table>
+      <!-- Tab 2 -->
+      <div class="tab-content hidden" id="content2">
+        <table class="hidden md:table w-full text-left border border-gray-200 mb-4">
+          <thead class="bg-gray-100">
+            <tr>
+              <th class="p-2 border">Project Title</th>
+              <th class="p-2 border">Budget</th>
+              <th class="p-2 border">Deadline</th>
+              <th class="p-2 border">Client</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t">
+              <td class="p-2 border"><a href="#">Digital Graphics</a></td>
+              <td class="p-2 border">$1,500 to $3,000</td>
+              <td class="p-2 border">2022 Nov 18</td>
+              <td class="p-2 border">Second Media</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Mobile Card -->
+        <div class="md:hidden bg-white p-4 rounded shadow">
+          <h5 class="font-semibold">Digital Graphics</h5>
+          <p><strong>Budget:</strong> $1,500 to $3,000</p>
+          <p><strong>Deadline:</strong> 2022 Nov 18</p>
+          <p><strong>Client:</strong> Second Media</p>
+        </div>
+      </div>
+
+      <!-- Tab 3 -->
+      <div class="tab-content hidden" id="content3">
+        <table class="hidden md:table w-full text-left border border-gray-200 mb-4">
+          <thead class="bg-gray-100">
+            <tr>
+              <th class="p-2 border">Project Title</th>
+              <th class="p-2 border">Budget</th>
+              <th class="p-2 border">Estimated</th>
+              <th class="p-2 border">Technology</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t">
+              <td class="p-2 border"><a href="#">New Web App</a></td>
+              <td class="p-2 border">$1,500 to $3,000</td>
+              <td class="p-2 border">2022 Nov 18</td>
+              <td class="p-2 border">Python Program</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Mobile Card -->
+        <div class="md:hidden bg-white p-4 rounded shadow">
+          <h5 class="font-semibold">New Web App</h5>
+          <p><strong>Budget:</strong> $1,500 to $3,000</p>
+          <p><strong>Estimated:</strong> 2022 Nov 18</p>
+          <p><strong>Technology:</strong> Python Program</p>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Right Content Block -->
-    <div class="w-full lg:w-[40rem] px-4">
-      <h4 class="text-2xl font-bold mb-4">
-        Please tell us about your idea and how you want it to be
-      </h4>
-      <p class="text-gray-600 mb-6 leading-relaxed">
-        You are allowed to use this template for your websites. You are
-        <b class="text-red-500">NOT allowed</b> to redistribute the template ZIP file on any other template websites.
-        <br /><br />
-        Thank you for downloading and using our templates. Please tell your friends about our website.
-      </p>
-      <a href="about-us.html"
-        class="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded transition">
-        Discover More
-      </a>
-    </div>
-  </section>
+  <!-- Right Side Content -->
+  <div class="w-full lg:w-[40rem] px-4">
+    <h4 class="text-2xl font-bold mb-4">Please tell us about your idea and how you want it to be</h4>
+    <p class="text-gray-600 mb-6 leading-relaxed">
+      You are allowed to use this template for your websites. You are
+      <b class="text-red-500">NOT allowed</b> to redistribute the template ZIP file on any other template websites.
+      <br /><br />
+      Thank you for downloading and using our templates. Please tell your friends about our website.
+    </p>
+    <a href="about-us.html"
+      class="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded transition">
+      Discover More
+    </a>
+  </div>
+</section>
 
 
 
@@ -528,6 +562,16 @@
     toggleBtn.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
     });
+
+      const tabs = document.querySelectorAll('input[name="tabs"]');
+  const contents = document.querySelectorAll(".tab-content");
+
+  tabs.forEach((tab, i) => {
+    tab.addEventListener("change", () => {
+      contents.forEach(c => c.classList.add("hidden"));
+      document.getElementById(`content${i + 1}`).classList.remove("hidden");
+    });
+  });
   </script>
 </body>
 
