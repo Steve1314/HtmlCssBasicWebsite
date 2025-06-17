@@ -9,12 +9,8 @@
   <meta name="author" content="">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
-
   <title>Mexant - Financial HTML5 Template</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
     /* Tabs */
     input[type="radio"] {
@@ -88,336 +84,341 @@
       text-decoration: underline;
     }
   </style>
-  <!-- Additional CSS Files -->
-  <link rel="stylesheet" href="assets/css/fontawesome.css">
-  <link rel="stylesheet" href="assets/css/templatemo-574-mexant.css">
-  <link rel="stylesheet" href="assets/css/owl.css">
-  <link rel="stylesheet" href="assets/css/animate.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
-  <!--
-
-TemplateMo 574 Mexant
-
-https://templatemo.com/tm-574-mexant
-
--->
 </head>
 
 <body>
 
 
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <nav class="main-nav">
-            <!-- ***** Logo Start ***** -->
-            <a href="index.html" class="logo">
-              <img src="assets/images/logo.png" alt="">
-            </a>
-            <!-- ***** Logo End ***** -->
-            <!-- ***** Menu Start ***** -->
-            <ul class="nav">
-              <li class="scroll-to-section"><a href="index.html">Home</a></li>
-              <li class="scroll-to-section"><a href="our-services.html">Services</a></li>
-              <li class="scroll-to-section"><a href="about-us.html">About</a></li>
-              <li><a href="testimonials.html">Testimonials</a></li>
+ <!-- ***** Header Area Start ***** -->
+<header class="fixed top-0 left-0 w-full bg-white shadow z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
 
-              <li><a href="contact-us.html">Contact Us</a></li>
-            </ul>
-            <a class='menu-trigger'>
-              <span>Menu</span>
-            </a>
-            <!-- ***** Menu End ***** -->
-          </nav>
-        </div>
-      </div>
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center">
+        <img src="assets/images/logo.png" alt="Logo" class="h-10 w-auto" />
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex space-x-8">
+        <a href="index.html" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+        <a href="our-services.html" class="text-gray-700 hover:text-blue-600 transition">Services</a>
+        <a href="about-us.html" class="text-gray-700 hover:text-blue-600 transition">About</a>
+        <a href="testimonials.html" class="text-gray-700 hover:text-blue-600 transition">Testimonials</a>
+        <a href="contact-us.html" class="text-gray-700 hover:text-blue-600 transition">Contact Us</a>
+      </nav>
+
+      <!-- Mobile Menu Toggle -->
+      <button id="mobile-menu-toggle" class="md:hidden flex items-center space-x-2 focus:outline-none p-2">
+        <span class="text-gray-700"></span>
+        <svg class="h-6 w-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
     </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
+  </div>
+
+  <!-- Mobile Navigation Menu -->
+  <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 bg-white">
+    <a href="index.html" class="block py-2 text-gray-700 hover:text-blue-600 transition">Home</a>
+    <a href="our-services.html" class="block py-2 text-gray-700 hover:text-blue-600 transition">Services</a>
+    <a href="about-us.html" class="block py-2 text-gray-700 hover:text-blue-600 transition">About</a>
+    <a href="testimonials.html" class="block py-2 text-gray-700 hover:text-blue-600 transition">Testimonials</a>
+    <a href="contact-us.html" class="block py-2 text-gray-700 hover:text-blue-600 transition">Contact Us</a>
+  </div>
+</header>
 
   <!-- ***** Main Banner Area Start ***** -->
   <div class="swiper-container" id="top">
     <div class="swiper-wrapper">
+      <!-- Swiper Slide -->
       <div class="swiper-slide">
-        <div class="slide-inner" style="background-image:url(assets/images/slide-01.jpg)">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8">
-                <div class="header-text" style="padding-top: 10rem;">
-                  <h2>Get <em>ready</em> for your business<br>&amp; upgrade <em>all aspects</em></h2>
-                  <div class="div-dec"></div>
-                  <p>Mexant HTML5 Template is provided for free of charge. This layout is based on Boostrap 5 CSS
-                    framework. Anyone can download and edit for any professional website. Thank you for visiting
-                    TemplateMo website.</p>
-                  <div class="buttons">
-                    <div class="green-button">
-                      <a href="#">Discover More</a>
-                    </div>
-                    <div class="orange-button">
-                      <a href="contact-us.html">Contact Us</a>
-                    </div>
-                  </div>
+        <div class="slide-inner bg-cover bg-center h-screen flex items-center"
+          style="background-image: url('assets/images/slide-01.jpg');">
+          <div class="max-w-7xl mx-auto px-4">
+            <div class="md:w-2/3">
+              <div class="bg-white/70 p-6 rounded-lg shadow-lg">
+                <h2 class="text-4xl md:text-5xl font-bold leading-tight text-gray-900">
+                  Get <em class="text-blue-600 not-italic">ready</em> for your business<br />
+                  &amp; upgrade <em class="text-orange-500 not-italic">all aspects</em>
+                </h2>
+
+                <div class="w-20 h-1 bg-green-500 mt-4 mb-6"></div>
+
+                <p class="text-gray-700 mb-6">
+                  Mexant HTML5 Template is provided for free of charge. This layout is based on Bootstrap 5 CSS
+                  framework. Anyone can download and edit for any professional website. Thank you for visiting
+                  TemplateMo website.
+                </p>
+
+                <div class="flex flex-wrap gap-4">
+                  <a href="#"
+                    class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 transition duration-300">
+                    Discover More
+                  </a>
+                  <a href="contact-us.html"
+                    class="bg-orange-500 text-white px-6 py-2 rounded hover:bg-orange-600 transition duration-300">
+                    Contact Us
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
     </div>
-
   </div>
+
 
   <!-- ***** Main Banner Area End ***** -->
 
-  <section class="services" id="services">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="service-item">
-            <i class="fas fa-archive"></i>
-            <h4>CSS Templates</h4>
-            <p>TemplateMo website is the best for you to explore and download free website templates.</p>
-          </div>
+  <section id="services" class="py-16 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <!-- Service Item -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition">
+          <i class="fas fa-archive text-4xl text-blue-600 mb-4"></i>
+          <h4 class="text-xl font-semibold mb-2">CSS Templates</h4>
+          <p class="text-gray-600">TemplateMo website is the best for you to explore and download free website
+            templates.</p>
         </div>
-        <div class="col-lg-6">
-          <div class="service-item">
-            <i class="fas fa-cloud"></i>
-            <h4>HTML5 Web Pages</h4>
-            <p>Templates are based on Bootstrap 5 CSS framework. You can easily adapt or modify based on your needs.</p>
-          </div>
+
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition">
+          <i class="fas fa-cloud text-4xl text-purple-600 mb-4"></i>
+          <h4 class="text-xl font-semibold mb-2">HTML5 Web Pages</h4>
+          <p class="text-gray-600">Templates are based on Bootstrap 5 CSS framework. You can easily adapt or modify
+            based on your needs.</p>
         </div>
-        <div class="col-lg-6">
-          <div class="service-item">
-            <i class="fas fa-charging-station"></i>
-            <h4>Responsive Designs</h4>
-            <p>All of our CSS templates are 100% free to use for commercial or business websites.</p>
-          </div>
+
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition">
+          <i class="fas fa-charging-station text-4xl text-yellow-500 mb-4"></i>
+          <h4 class="text-xl font-semibold mb-2">Responsive Designs</h4>
+          <p class="text-gray-600">All of our CSS templates are 100% free to use for commercial or business websites.
+          </p>
         </div>
-        <div class="col-lg-6">
-          <div class="service-item">
-            <i class="fas fa-suitcase"></i>
-            <h4>Mobile and Tablet ready!</h4>
-            <p>Our HTML CSS templates are well-tested on mobile, tablet, and desktop compatibility.</p>
-          </div>
+
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition">
+          <i class="fas fa-suitcase text-4xl text-red-500 mb-4"></i>
+          <h4 class="text-xl font-semibold mb-2">Mobile and Tablet ready!</h4>
+          <p class="text-gray-600">Our HTML CSS templates are well-tested on mobile, tablet, and desktop compatibility.
+          </p>
         </div>
-        <div class="col-lg-6">
-          <div class="service-item">
-            <i class="fas fa-archway"></i>
-            <h4>Fast Customer Support</h4>
-            <p>Do not be hesitated to contact us if you have any question or concern about our templates.</p>
-          </div>
+
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition">
+          <i class="fas fa-archway text-4xl text-green-500 mb-4"></i>
+          <h4 class="text-xl font-semibold mb-2">Fast Customer Support</h4>
+          <p class="text-gray-600">Do not be hesitated to contact us if you have any question or concern about our
+            templates.</p>
         </div>
-        <div class="col-lg-6">
-          <div class="service-item">
-            <i class="fas fa-puzzle-piece"></i>
-            <h4>Fully Customizable</h4>
-            <p>If you have any idea or suggestion about new templates, feel free to let us know.</p>
-          </div>
+
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition">
+          <i class="fas fa-puzzle-piece text-4xl text-indigo-600 mb-4"></i>
+          <h4 class="text-xl font-semibold mb-2">Fully Customizable</h4>
+          <p class="text-gray-600">If you have any idea or suggestion about new templates, feel free to let us know.</p>
         </div>
+
       </div>
     </div>
   </section>
 
-  <section class="simple-cta">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5">
-          <h4>Business <em>Solutions</em> and <strong>Crypto</strong> Investments</h4>
+
+  <section class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+
+        <!-- Left: Text -->
+        <h4 class="text-2xl md:text-3xl font-semibold text-center md:text-left">
+          Business <em class="text-green-400 not-italic">Solutions</em> and
+          <strong class="text-orange-400 font-bold">Crypto</strong> Investments
+        </h4>
+
+        <!-- Right: Buttons -->
+        <div class="flex flex-wrap justify-center md:justify-end gap-4">
+          <a href="#" class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded transition">
+            Discover More
+          </a>
+          <a href="#" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded transition">
+            Contact Us
+          </a>
         </div>
-        <div class="col-lg-7">
-          <div class="buttons">
-            <div class="green-button">
-              <a href="#">Discover More</a>
-            </div>
-            <div class="orange-button">
-              <a href="#">Contact Us</a>
-            </div>
-          </div>
-        </div>
+
       </div>
     </div>
   </section>
 
-  <section class="about-us" id="about">
-    <div class="container">
-      <div class="section-heading text-center">
-        <h6>About Us</h6>
-        <h4>Know Us Better</h4>
-      </div>
 
+  <section class="flex flex-col lg:flex-row gap-10 max-w-7xl mx-auto px-6 py-16">
+
+    <div class="flex-1">
+      <!-- [RADIO INPUTS] -->
+      <h2 class="text-center text-3xl font-bold mb-4">Know Us Better</h2>
       <input type="radio" name="tabs" id="tab1" checked>
       <input type="radio" name="tabs" id="tab2">
       <input type="radio" name="tabs" id="tab3">
 
-
-
-      <div class="tab-content" style="display: flex; gap: 20px;">
-        <div class="tabs-wrapper">
-          <div class="tab-labels">
-            <label for="tab1">Web Design</label>
-            <label for="tab2">Graphics</label>
-            <label for="tab3">Web Coding</label>
-          </div>
-          <div class="tab" id="content1">
-            <table>
-              <thead>
-                <tr>
-                  <th>Project Title</th>
-                  <th>Budget</th>
-                  <th>Deadline</th>
-                  <th>Client</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><a href="#">Website Redesign</a></td>
-                  <td>$1,500 to $2,200</td>
-                  <td>2022 Dec 12</td>
-                  <td>Web Biz</td>
-                </tr>
-                <tr>
-                  <td><a href="#">Website Renovation</a></td>
-                  <td>$2,500 to $3,600</td>
-                  <td>2022 Dec 10</td>
-                  <td>Online Ads</td>
-                </tr>
-                <tr>
-                  <td><a href="#">Marketing Plan</a></td>
-                  <td>$2,500 to $4,200</td>
-                  <td>2022 Dec 8</td>
-                  <td>Web Biz</td>
-                </tr>
-                <tr>
-                  <td><a href="#">All-new Website</a></td>
-                  <td>$3,000 to $6,600</td>
-                  <td>2022 Dec 2</td>
-                  <td>Web Presence</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="tab" id="content2">
-            <table>
-              <thead>
-                <tr>
-                  <th>Project Title</th>
-                  <th>Budget</th>
-                  <th>Deadline</th>
-                  <th>Client</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><a href="#">Graphics Redesign</a></td>
-                  <td>$500 to $800</td>
-                  <td>2022 Nov 24</td>
-                  <td>Media One</td>
-                </tr>
-                <tr>
-                  <td><a href="#">Digital Graphics</a></td>
-                  <td>$1,500 to $3,000</td>
-                  <td>2022 Nov 18</td>
-                  <td>Second Media</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="tab" id="content3">
-            <table>
-              <thead>
-                <tr>
-                  <th>Project Title</th>
-                  <th>Budget</th>
-                  <th>Estimated</th>
-                  <th>Technology</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><a href="#">Backend Coding</a></td>
-                  <td>$2,000 to $5,000</td>
-                  <td>2022 Nov 28</td>
-                  <td>PHP MySQL</td>
-                </tr>
-                <tr>
-                  <td><a href="#">New Web App</a></td>
-                  <td>$1,500 to $3,000</td>
-                  <td>2022 Nov 18</td>
-                  <td>Python Programming</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+      <!-- [TAB LABELS] -->
+      <div class="tab-labels">
+        <label for="tab1">Web Design</label>
+        <label for="tab2">Graphics</label>
+        <label for="tab3">Web Coding</label>
+      </div>
+      <!-- [TAB CONTENT] -->
+      <div class="tab-content">
+        <!-- Tab 1 -->
+        <div id="content1" class="tab">
+          <table>
+            <thead>
+              <tr>
+                <th>Project Title</th>
+                <th>Budget</th>
+                <th>Deadline</th>
+                <th>Client</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="#">Website Redesign</a></td>
+                <td>$1,500 to $2,200</td>
+                <td>2022 Dec 12</td>
+                <td>Web Biz</td>
+              </tr>
+              <tr>
+                <td><a href="#">All-new Website</a></td>
+                <td>$3,000 to $6,600</td>
+                <td>2022 Dec 2</td>
+                <td>Web Presence</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <!-- Right Content -->
-        <div class="right-content" style="width: 40rem;">
-          <h4>Please tell us about your idea and how you want it to be</h4>
-          <p>You are allowed to use this template for your websites. You are <b>NOT allowed</b> to redistribute the
-            template ZIP file on any other template websites.<br><br>Thank you for downloading and using our
-            templates. Please tell your friends about our website.</p>
-          <div class="green-button">
-            <a href="about-us.html">Discover More</a>
-          </div>
+        <!-- Tab 2 -->
+        <div id="content2" class="tab">
+          <table>
+            <thead>
+              <tr>
+                <th>Project Title</th>
+                <th>Budget</th>
+                <th>Deadline</th>
+                <th>Client</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="#">Digital Graphics</a></td>
+                <td>$1,500 to $3,000</td>
+                <td>2022 Nov 18</td>
+                <td>Second Media</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Tab 3 -->
+        <div id="content3" class="tab">
+          <table>
+            <thead>
+              <tr>
+                <th>Project Title</th>
+                <th>Budget</th>
+                <th>Estimated</th>
+                <th>Technology</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="#">New Web App</a></td>
+                <td>$1,500 to $3,000</td>
+                <td>2022 Nov 18</td>
+                <td>Python Programming</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
+    </div>
+
+    <!-- Right Content Block -->
+    <div class="w-full lg:w-[40rem]">
+      <h4 class="text-2xl font-bold mb-4">
+        Please tell us about your idea and how you want it to be
+      </h4>
+      <p class="text-gray-600 mb-6 leading-relaxed">
+        You are allowed to use this template for your websites. You are
+        <b class="text-red-500">NOT allowed</b> to redistribute the template ZIP file on any other template websites.
+        <br /><br />
+        Thank you for downloading and using our templates. Please tell your friends about our website.
+      </p>
+      <a href="about-us.html"
+        class="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded transition">
+        Discover More
+      </a>
     </div>
   </section>
 
 
-  <section class="calculator">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-7">
-          <div class="left-image">
-            <img src="assets/images/calculator-image.png" alt="">
-          </div>
+
+  <section class="py-20 bg-gray-50" id="calculator">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex flex-col lg:flex-row items-center gap-10">
+
+        <!-- Left Image -->
+        <div class="w-full lg:w-7/12">
+          <img src="assets/images/calculator-image.png" alt="Calculator" class="w-full h-auto object-contain">
         </div>
-        <div class="col-lg-5">
-          <div class="section-heading">
-            <h6>Your Freedom</h6>
-            <h4>Get a Financial Plan</h4>
+
+        <!-- Right Form -->
+        <div class="w-full lg:w-5/12">
+          <div class="mb-8">
+            <h6 class="text-sm text-gray-500 uppercase tracking-wider mb-2">Your Freedom</h6>
+            <h4 class="text-3xl font-bold text-gray-800">Get a Financial Plan</h4>
           </div>
-          <form id="calculate" action="" method="get">
-            <div class="row">
-              <div class="col-lg-6">
-                <fieldset>
-                  <label for="name">Your Name</label>
-                  <input type="name" name="name" id="name" placeholder="" autocomplete="on" required>
-                </fieldset>
+
+          <form id="calculate" action="" method="get" class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <!-- Name -->
+              <div>
+                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                <input type="text" name="name" id="name" required autocomplete="on"
+                  class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500">
               </div>
-              <div class="col-lg-6">
-                <fieldset>
-                  <label for="email">Your Email</label>
-                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="" required="">
-                </fieldset>
+
+              <!-- Email -->
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Your Email</label>
+                <input type="email" name="email" id="email" required pattern="[^ @]*@[^ @]*"
+                  class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500">
               </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <label for="subject">Subject</label>
-                  <input type="subject" name="subject" id="subject" placeholder="" autocomplete="on">
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <label for="chooseOption" class="form-label">Your Reason</label>
-                  <select name="Category" class="form-select" aria-label="Default select example" id="chooseOption"
-                    onchange="this.form.click()">
-                    <option selected>Choose an Option</option>
-                    <option type="checkbox" name="option1" value="Online Banking">Online Banking</option>
-                    <option value="Financial Control">Financial Control</option>
-                    <option value="Yearly Profit">Yearly Profit</option>
-                    <option value="Crypto Investment">Crypto Investment</option>
-                  </select>
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <button type="submit" id="form-submit" class="orange-button">Submit Now</button>
-                </fieldset>
-              </div>
+            </div>
+
+            <!-- Subject -->
+            <div>
+              <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+              <input type="text" name="subject" id="subject" autocomplete="on"
+                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500">
+            </div>
+
+            <!-- Reason Select -->
+            <div>
+              <label for="chooseOption" class="block text-sm font-medium text-gray-700 mb-1">Your Reason</label>
+              <select name="Category" id="chooseOption"
+                class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-orange-500"
+                onchange="this.form.click()">
+                <option selected>Choose an Option</option>
+                <option value="Online Banking">Online Banking</option>
+                <option value="Financial Control">Financial Control</option>
+                <option value="Yearly Profit">Yearly Profit</option>
+                <option value="Crypto Investment">Crypto Investment</option>
+              </select>
+            </div>
+
+            <!-- Submit -->
+            <div>
+              <button type="submit" id="form-submit"
+                class="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
+                Submit Now
+              </button>
             </div>
           </form>
         </div>
@@ -425,106 +426,109 @@ https://templatemo.com/tm-574-mexant
     </div>
   </section>
 
-  <section class="testimonials" id="testimonials">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-          <div class="section-heading">
-            <h6>Testimonials</h6>
-            <h4>What They Say</h4>
+
+  <section id="testimonials" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <!-- Heading -->
+      <div class="text-center mb-12">
+        <h6 class="text-sm text-gray-500 uppercase tracking-wider">Testimonials</h6>
+        <h4 class="text-3xl font-bold text-gray-800">What They Say</h4>
+      </div>
+
+      <!-- Testimonial Cards -->
+      <div class="grid gap-10 lg:grid-cols-3">
+        <!-- Item 1 -->
+        <div class="bg-white p-6 rounded-xl shadow-md relative">
+          <i class="fa fa-quote-left text-2xl text-primary mb-4"></i>
+          <p class="text-gray-600 mb-4">“Donec et nunc massa. Nullam non felis dignissim, dapibus turpis semper,
+            vulputate lorem. Nam volutpat posuere tellus, in porttitor justo interdum nec. Aenean in dapibus risus, in
+            euismod ligula.”</p>
+          <h4 class="font-semibold text-lg">David Eigenberg</h4>
+          <span class="text-sm text-gray-500">CEO of Mexant</span>
+          <div class="absolute right-6 bottom-6 w-12 h-12 rounded-full overflow-hidden">
+            <img src="assets/images/testimonials-01.jpg" alt="David Eigenberg" class="w-full h-full object-cover">
           </div>
         </div>
-        <div class="col-lg-10 offset-lg-1">
-          <div  >
-            <div class="item">
-              <i class="fa fa-quote-left"></i>
-              <p>“Donec et nunc massa. Nullam non felis dignissim, dapibus turpis semper, vulputate lorem. Nam volutpat
-                posuere tellus, in porttitor justo interdum nec. Aenean in dapibus risus, in euismod ligula. Aliquam vel
-                scelerisque elit.”</p>
-              <h4>David Eigenberg</h4>
-              <span>CEO of Mexant</span>
-              <div class="right-image">
-                <img src="assets/images/testimonials-01.jpg" alt="">
-              </div>
-            </div>
-            <div class="item">
-              <i class="fa fa-quote-left"></i>
-              <p>“Etiam id ligula risus. Fusce fringilla nisl nunc, nec rutrum lectus cursus nec. In blandit nibh dolor,
-                at rutrum leo accumsan porta. Nullam pulvinar eros porttitor risus condimentum tempus.”</p>
-              <h4>Andrew Garfield</h4>
-              <span>CTO of Mexant</span>
-              <div class="right-image">
-                <img src="assets/images/testimonials-01.jpg" alt="">
-              </div>
-            </div>
-            <div class="item">
-              <i class="fa fa-quote-left"></i>
-              <p>“Ut dictum vehicula massa, ac pharetra leo tincidunt eu. Phasellus in tristique magna, ac gravida leo.
-                Integer sed lorem sapien. Ut viverra mauris sed lobortis commodo.”</p>
-              <h4>George Lopez</h4>
-              <span>Crypto Manager</span>
-              <div class="right-image">
-                <img src="assets/images/testimonials-01.jpg" alt="">
-              </div>
-            </div>
+
+        <!-- Item 2 -->
+        <div class="bg-white p-6 rounded-xl shadow-md relative">
+          <i class="fa fa-quote-left text-2xl text-primary mb-4"></i>
+          <p class="text-gray-600 mb-4">“Etiam id ligula risus. Fusce fringilla nisl nunc, nec rutrum lectus cursus nec.
+            In blandit nibh dolor, at rutrum leo accumsan porta. Nullam pulvinar eros porttitor risus condimentum
+            tempus.”</p>
+          <h4 class="font-semibold text-lg">Andrew Garfield</h4>
+          <span class="text-sm text-gray-500">CTO of Mexant</span>
+          <div class="absolute right-6 bottom-6 w-12 h-12 rounded-full overflow-hidden">
+            <img src="assets/images/testimonials-01.jpg" alt="Andrew Garfield" class="w-full h-full object-cover">
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="bg-white p-6 rounded-xl shadow-md relative">
+          <i class="fa fa-quote-left text-2xl text-primary mb-4"></i>
+          <p class="text-gray-600 mb-4">“Ut dictum vehicula massa, ac pharetra leo tincidunt eu. Phasellus in tristique
+            magna, ac gravida leo. Integer sed lorem sapien. Ut viverra mauris sed lobortis commodo.”</p>
+          <h4 class="font-semibold text-lg">George Lopez</h4>
+          <span class="text-sm text-gray-500">Crypto Manager</span>
+          <div class="absolute right-6 bottom-6 w-12 h-12 rounded-full overflow-hidden">
+            <img src="assets/images/testimonials-01.jpg" alt="George Lopez" class="w-full h-full object-cover">
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="partners">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-2 col-sm-4 col-6">
-          <div class="item">
-            <img src="assets/images/client-01.png" alt="">
-          </div>
+
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 place-items-center">
+        <div class="item">
+          <img src="assets/images/client-01.png" alt="Client Logo" class="w-full h-auto object-contain max-h-16">
         </div>
-        <div class="col-lg-2 col-sm-4 col-6">
-          <div class="item">
-            <img src="assets/images/client-01.png" alt="">
-          </div>
+        <div class="item">
+          <img src="assets/images/client-01.png" alt="Client Logo" class="w-full h-auto object-contain max-h-16">
         </div>
-        <div class="col-lg-2 col-sm-4 col-6">
-          <div class="item">
-            <img src="assets/images/client-01.png" alt="">
-          </div>
+        <div class="item">
+          <img src="assets/images/client-01.png" alt="Client Logo" class="w-full h-auto object-contain max-h-16">
         </div>
-        <div class="col-lg-2 col-sm-4 col-6">
-          <div class="item">
-            <img src="assets/images/client-01.png" alt="">
-          </div>
+        <div class="item">
+          <img src="assets/images/client-01.png" alt="Client Logo" class="w-full h-auto object-contain max-h-16">
         </div>
-        <div class="col-lg-2 col-sm-4 col-6">
-          <div class="item">
-            <img src="assets/images/client-01.png" alt="">
-          </div>
+        <div class="item">
+          <img src="assets/images/client-01.png" alt="Client Logo" class="w-full h-auto object-contain max-h-16">
         </div>
-        <div class="col-lg-2 col-sm-4 col-6">
-          <div class="item">
-            <img src="assets/images/client-01.png" alt="">
-          </div>
+        <div class="item">
+          <img src="assets/images/client-01.png" alt="Client Logo" class="w-full h-auto object-contain max-h-16">
         </div>
       </div>
     </div>
   </section>
 
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <p>Copyright © 2022 Mexant Co., Ltd. All Rights Reserved.
 
-            <br>Designed by <a title="CSS Templates" rel="sponsored" href="https://templatemo.com"
-              target="_blank">TemplateMo</a>
-          </p>
-        </div>
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center">
+        <p class="text-sm">
+          &copy; 2022 Mexant Co., Ltd. All Rights Reserved.
+          <br />
+          Designed by
+          <a href="https://templatemo.com" target="_blank" rel="sponsored" class="text-blue-400 hover:underline">
+            TemplateMo
+          </a>
+        </p>
       </div>
     </div>
   </footer>
 
 
+<script>
+  const toggleBtn = document.getElementById('mobile-menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  toggleBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
 </body>
 
 </html>

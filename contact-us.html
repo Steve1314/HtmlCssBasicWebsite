@@ -7,19 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
 
     <title>Mexant Template - Contact page</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-574-mexant.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
 <!--
 
 TemplateMo 574 Mexant
@@ -32,242 +22,231 @@ https://templatemo.com/tm-574-mexant
 <body>
 
 
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
-      <div class="container">
-          <div class="row">
-              <div class="col-12">
-                  <nav class="main-nav">
-                      <!-- ***** Logo Start ***** -->
-                      <a href="index.html" class="logo">
-                          <img src="assets/images/logo.png" alt="">
-                      </a>
-                      <!-- ***** Logo End ***** -->
-                      <!-- ***** Menu Start ***** -->
-                      <ul class="nav">
-              <li class="scroll-to-section"><a href="index.html" >Home</a></li>
-              <li class="scroll-to-section"><a href="our-services.html">Services</a></li>
-              <li class="scroll-to-section"><a href="about-us.html">About</a></li>
-                <li class="scroll-to-section"><a href="testimonials.html">Testimonials</a></li>
+<header class="fixed top-0 left-0 w-full bg-white shadow z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
 
-              <li><a href="contact-us.html">Contact Us</a></li>
-                 </ul>        
-                      <a class='menu-trigger'>
-                          <span>Menu</span>
-                      </a>
-                      <!-- ***** Menu End ***** -->
-                  </nav>
-              </div>
-          </div>
-      </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center">
+        <img src="assets/images/logo.png" alt="Logo" class="h-10 w-auto" />
+      </a>
 
-  <div class="page-heading">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="header-text">
-            <h2>Contact Us</h2>
-            <div class="div-dec"></div>
-          </div>
-        </div>
-      </div>
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex space-x-8">
+        <a href="index.html" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+        <a href="our-services.html" class="text-gray-700 hover:text-blue-600 transition">Services</a>
+        <a href="about-us.html" class="text-gray-700 hover:text-blue-600 transition">About</a>
+        <a href="testimonials.html" class="text-gray-700 hover:text-blue-600 transition">Testimonials</a>
+        <a href="contact-us.html" class="text-gray-700 hover:text-blue-600 transition">Contact Us</a>
+      </nav>
+
+      <!-- Mobile Menu Toggle -->
+      <button id="mobile-menu-toggle" class="md:hidden flex items-center space-x-2 focus:outline-none p-2">
+        <span class="text-gray-700"></span>
+        <svg class="h-6 w-6 text-gray-700 " fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
     </div>
   </div>
 
-  <!-- ***** Main Banner Area End ***** -->
+  <!-- Mobile Navigation Menu -->
+  <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 bg-white">
+    <a href="index.html" class="block py-2 text-gray-700 hover:text-blue-600 transition">Home</a>
+    <a href="our-services.html" class="block py-2 text-gray-700 hover:text-blue-600 transition">Services</a>
+    <a href="about-us.html" class="block py-2 text-gray-700 hover:text-blue-600 transition">About</a>
+    <a href="testimonials.html" class="block py-2 text-gray-700 hover:text-blue-600 transition">Testimonials</a>
+    <a href="contact-us.html" class="block py-2 text-gray-700 hover:text-blue-600 transition">Contact Us</a>
+  </div>
+</header>
 
-  <section class="map">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div id="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2791.78997548554!2d144.9805125252687!3d-37.84132841005892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6681f3e9cb7e1%3A0x9d52778f56cab5a8!2sFawkner%20Park!5e1!3m2!1sen!2sth!4v1648201596364!5m2!1sen!2sth" width="100%" height="450px" frameborder="0" style="border:0; border-radius: 5px; position: relative; z-index: 2;" allowfullscreen=""></iframe>
-          </div>
-        </div>
-        <div class="col-lg-10 offset-lg-1">
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="info-item">
-                <i class="fa fa-envelope"></i>
-                <h4>Email Address</h4>
-                <a href="#">info@company.com</a>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="info-item">
-                <i class="fa fa-phone"></i>
-                <h4>Phone Number</h4>
-                <a href="#">010-020-0340</a>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="info-item">
-                <i class="fa fa-map-marked-alt"></i>
-                <h4>Address</h4>
-                <a href="#">Victoria, Australia</a>
-              </div>
-            </div>
-          </div>
-        </div>
+ <!-- ***** Header Area End ***** -->
+<div class="relative bg-cover bg-center py-24 bg-gray-100 pt-32">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center">
+      <h2 class="text-4xl font-bold text-gray-800 mb-4">Contact Us</h2>
+      <div class="w-24 h-1 mx-auto bg-blue-500 rounded"></div>
+    </div>
+  </div>
+</div>
+
+
+ <!-- ***** Main Banner Area End ***** -->
+<section class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <!-- Map -->
+    <div class="w-full mb-12">
+      <div class="relative rounded overflow-hidden shadow-lg z-10">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2791.78997548554!2d144.9805125252687!3d-37.84132841005892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6681f3e9cb7e1%3A0x9d52778f56cab5a8!2sFawkner%20Park!5e1!3m2!1sen!2sth!4v1648201596364!5m2!1sen!2sth"
+          width="100%"
+          height="450"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="w-full h-[450px] rounded"
+        ></iframe>
       </div>
     </div>
-  </section>
 
-  <section class="contact-us-form">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-          <div class="section-heading">
-            <h6>Contact Us</h6>
-            <h4>Feel free to message us</h4>
-          </div>
-        </div>
-        <div class="col-lg-10 offset-lg-1">
-          <form id="contact" action="" method="post">
-            <div class="row">
-              <div class="col-lg-6">
-                <fieldset>
-                  <input type="name" name="name" id="name" placeholder="Your Name..." autocomplete="on" required>
-                </fieldset>
-              </div>
-              <div class="col-lg-6">
-                <fieldset>
-                  <input type="phone" name="phone" id="phone" placeholder="Your Phone..." autocomplete="on" required>
-                </fieldset>
-              </div>
-              <div class="col-lg-6">
-                <fieldset>
-                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your E-mail..." required="">
-                </fieldset>
-              </div>
-              <div class="col-lg-6">
-                <fieldset>
-                  <input type="subject" name="subject" id="subject" placeholder="Subject..." autocomplete="on" >
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <textarea name="message" id="message" placeholder="Your Message"></textarea>
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <button type="submit" id="form-submit" class="orange-button">Send Message</button>
-                </fieldset>
-              </div>
-            </div>
-          </form>
-        </div>
+    <!-- Contact Info -->
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Email -->
+      <div class="text-center">
+        <i class="fa fa-envelope text-3xl text-primary mb-4"></i>
+        <h4 class="text-xl font-semibold mb-2">Email Address</h4>
+        <a href="#" class="text-blue-600 hover:underline">info@company.com</a>
+      </div>
+
+      <!-- Phone -->
+      <div class="text-center">
+        <i class="fa fa-phone text-3xl text-primary mb-4"></i>
+        <h4 class="text-xl font-semibold mb-2">Phone Number</h4>
+        <a href="#" class="text-blue-600 hover:underline">010-020-0340</a>
+      </div>
+
+      <!-- Address -->
+      <div class="text-center">
+        <i class="fa fa-map-marked-alt text-3xl text-primary mb-4"></i>
+        <h4 class="text-xl font-semibold mb-2">Address</h4>
+        <a href="#" class="text-blue-600 hover:underline">Victoria, Australia</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="partners">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-2 col-sm-4 col-6">
-          <div class="item">
-            <img src="assets/images/client-01.png" alt="">
-          </div>
+
+<section class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <!-- Section Heading -->
+    <div class="max-w-2xl mx-auto text-center mb-12">
+      <h6 class="text-primary text-sm font-semibold uppercase">Contact Us</h6>
+      <h4 class="text-3xl font-bold mt-2">Feel free to message us</h4>
+    </div>
+
+    <!-- Form -->
+    <div class="max-w-5xl mx-auto">
+      <form id="contact" action="" method="post" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Name -->
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Your Name..."
+          autocomplete="on"
+          required
+          class="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+        />
+
+        <!-- Phone -->
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          placeholder="Your Phone..."
+          autocomplete="on"
+          required
+          class="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+        />
+
+        <!-- Email -->
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Your E-mail..."
+          pattern="[^ @]*@[^ @]*"
+          required
+          class="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+        />
+
+        <!-- Subject -->
+        <input
+          type="text"
+          name="subject"
+          id="subject"
+          placeholder="Subject..."
+          autocomplete="on"
+          class="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+        />
+
+        <!-- Message -->
+        <textarea
+          name="message"
+          id="message"
+          rows="6"
+          placeholder="Your Message"
+          class="md:col-span-2 w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+        ></textarea>
+
+        <!-- Submit Button -->
+        <div class="md:col-span-2 text-center">
+          <button
+            type="submit"
+            id="form-submit"
+            class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-8 rounded-md transition duration-300"
+          >
+            Send Message
+          </button>
         </div>
-        <div class="col-lg-2 col-sm-4 col-6">
-          <div class="item">
-            <img src="assets/images/client-01.png" alt="">
-          </div>
-        </div>
-        <div class="col-lg-2 col-sm-4 col-6">
-          <div class="item">
-            <img src="assets/images/client-01.png" alt="">
-          </div>
-        </div>
-        <div class="col-lg-2 col-sm-4 col-6">
-          <div class="item">
-            <img src="assets/images/client-01.png" alt="">
-          </div>
-        </div>
-        <div class="col-lg-2 col-sm-4 col-6">
-          <div class="item">
-            <img src="assets/images/client-01.png" alt="">
-          </div>
-        </div>
-        <div class="col-lg-2 col-sm-4 col-6">
-          <div class="item">
-            <img src="assets/images/client-01.png" alt="">
-          </div>
-        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+  <section class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 items-center justify-items-center">
+      <div class="item">
+        <img src="assets/images/client-01.png" alt="Client 1" class="max-h-12 object-contain" />
+      </div>
+      <div class="item">
+        <img src="assets/images/client-01.png" alt="Client 2" class="max-h-12 object-contain" />
+      </div>
+      <div class="item">
+        <img src="assets/images/client-01.png" alt="Client 3" class="max-h-12 object-contain" />
+      </div>
+      <div class="item">
+        <img src="assets/images/client-01.png" alt="Client 4" class="max-h-12 object-contain" />
+      </div>
+      <div class="item">
+        <img src="assets/images/client-01.png" alt="Client 5" class="max-h-12 object-contain" />
+      </div>
+      <div class="item">
+        <img src="assets/images/client-01.png" alt="Client 6" class="max-h-12 object-contain" />
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <p>Copyright © 2022 Mexant Co., Ltd. All Rights Reserved. 
-          
-          <br>Designed by <a title="CSS Templates" rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
-        </div>
+
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center">
+        <p class="text-sm">
+          &copy; 2022 Mexant Co., Ltd. All Rights Reserved.
+          <br />
+          Designed by
+          <a href="https://templatemo.com" target="_blank" rel="sponsored" class="text-blue-400 hover:underline">
+            TemplateMo
+          </a>
+        </p>
       </div>
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <script src="assets/js/isotope.min.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
+ <script>
+  const toggleBtn = document.getElementById('mobile-menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
 
-    <script src="assets/js/tabs.js"></script>
-    <script src="assets/js/swiper.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script>
-      var interleaveOffset = 0.5;
-
-      var swiperOptions = {
-        loop: true,
-        speed: 1000,
-        grabCursor: true,
-        watchSlidesProgress: true,
-        mousewheelControl: true,
-        keyboardControl: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev"
-        },
-        on: {
-          progress: function() {
-            var swiper = this;
-            for (var i = 0; i < swiper.slides.length; i++) {
-              var slideProgress = swiper.slides[i].progress;
-              var innerOffset = swiper.width * interleaveOffset;
-              var innerTranslate = slideProgress * innerOffset;
-              swiper.slides[i].querySelector(".slide-inner").style.transform =
-                "translate3d(" + innerTranslate + "px, 0, 0)";
-            }      
-          },
-          touchStart: function() {
-            var swiper = this;
-            for (var i = 0; i < swiper.slides.length; i++) {
-              swiper.slides[i].style.transition = "";
-            }
-          },
-          setTransition: function(speed) {
-            var swiper = this;
-            for (var i = 0; i < swiper.slides.length; i++) {
-              swiper.slides[i].style.transition = speed + "ms";
-              swiper.slides[i].querySelector(".slide-inner").style.transition =
-                speed + "ms";
-            }
-          }
-        }
-      };
-
-      var swiper = new Swiper(".swiper-container", swiperOptions);
-    </script>
+  toggleBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
 
   </body>
 </html>

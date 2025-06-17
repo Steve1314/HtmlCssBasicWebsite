@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
 
     <title>Mexant HTML5 Template - About page</title>
     <style>
@@ -60,294 +60,243 @@ input[type="radio"] {
 }
 </style>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-574-mexant.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
-<!--
-
-TemplateMo 574 Mexant
-
-https://templatemo.com/tm-574-mexant
-
--->
-
   </head>
 
 <body>
 
 
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
-      <div class="container">
-          <div class="row">
-              <div class="col-12">
-                  <nav class="main-nav">
-                      <!-- ***** Logo Start ***** -->
-                      <a href="index.html" class="logo">
-                          <img src="assets/images/logo.png" alt="">
-                      </a>
-                      <!-- ***** Logo End ***** -->
-                      <!-- ***** Menu Start ***** -->
-                      <ul class="nav">
-              <li class="scroll-to-section"><a href="index.html">Home</a></li>
-              <li class="scroll-to-section"><a href="our-services.html">Services</a></li>
-              <li class="scroll-to-section"><a href="about-us.html">About</a></li>
-                <li class="scroll-to-section"><a href="testimonials.html">Testimonials</a></li>         
+<header class="fixed top-0 left-0 w-full bg-white shadow z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
 
-              <li><a href="contact-us.html">Contact Us</a></li>
-        </ul>     
-                      <a class='menu-trigger'>
-                          <span>Menu</span>
-                      </a>
-                      <!-- ***** Menu End ***** -->
-                  </nav>
-              </div>
-          </div>
-      </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center">
+        <img src="assets/images/logo.png" alt="Logo" class="h-10 w-auto" />
+      </a>
 
-  <div class="page-heading">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="header-text">
-            <h2>About Us</h2>
-            <div class="div-dec"></div>
-          </div>
-        </div>
-      </div>
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex space-x-8">
+        <a href="index.html" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+        <a href="our-services.html" class="text-gray-700 hover:text-blue-600 transition">Services</a>
+        <a href="about-us.html" class="text-gray-700 hover:text-blue-600 transition">About</a>
+        <a href="testimonials.html" class="text-gray-700 hover:text-blue-600 transition">Testimonials</a>
+        <a href="contact-us.html" class="text-gray-700 hover:text-blue-600 transition">Contact Us</a>
+      </nav>
+
+      <!-- Mobile Menu Toggle -->
+      <button id="mobile-menu-toggle" class="md:hidden flex items-center space-x-2 focus:outline-none p-2">
+        <span class="text-gray-700"></span>
+        <svg class="h-6 w-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
     </div>
   </div>
 
+  <!-- Mobile Navigation Menu -->
+  <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 bg-white">
+    <a href="index.html" class="block py-2 text-gray-700 hover:text-blue-600 transition">Home</a>
+    <a href="our-services.html" class="block py-2 text-gray-700 hover:text-blue-600 transition">Services</a>
+    <a href="about-us.html" class="block py-2 text-gray-700 hover:text-blue-600 transition">About</a>
+    <a href="testimonials.html" class="block py-2 text-gray-700 hover:text-blue-600 transition">Testimonials</a>
+    <a href="contact-us.html" class="block py-2 text-gray-700 hover:text-blue-600 transition">Contact Us</a>
+  </div>
+</header>
+
+
+  <!-- ***** Header Area End ***** -->
+
+<div class="relative bg-cover bg-center py-24 bg-gray-100 pt-32">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center">
+      <h2 class="text-4xl font-bold text-gray-800 mb-4">About Us</h2>
+      <div class="w-24 h-1 mx-auto bg-blue-500 rounded"></div>
+    </div>
+  </div>
+</div>
+
+
   <!-- ***** Main Banner Area End ***** -->
 
-  <section class="top-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="left-image">
-          <img src="assets/images/about-left-image.jpg" alt="">
-        </div>
+ <section class="py-20 bg-white">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col lg:flex-row gap-10">
+      <!-- Left Image -->
+      <div class="lg:w-1/2">
+        <img src="assets/images/about-left-image.jpg" alt="About" class="rounded-lg shadow-lg w-full h-auto object-cover" />
       </div>
-      <div class="col-lg-6 align-self-center">
 
-        <!-- CSS-only Accordion Tabs -->
-        <input type="radio" name="accordion" id="acc1" checked>
-        <input type="radio" name="accordion" id="acc2">
-        <input type="radio" name="accordion" id="acc3">
+      <!-- Right Accordion -->
+      <div class="lg:w-1/2 flex flex-col justify-center">
+        <!-- Radio Inputs (hidden) -->
+        <input type="radio" name="accordion" id="acc1" class="hidden peer/acc1" checked />
+        <input type="radio" name="accordion" id="acc2" class="hidden peer/acc2" />
+        <input type="radio" name="accordion" id="acc3" class="hidden peer/acc3" />
 
-        <div class="accordion-tabs">
-          <label for="acc1" class="accordion-tab">
-            Mexant Financial Planning
-            <span class="icon">&#8250;</span>
-          </label>
-          <div class="accordion-content">
-            <p>You will see a bunch of free CSS templates when you search on Google. TemplateMo website is probably the best one because it is 100% free.<br><br>We do not ask you anything in return. You are free to use our templates for any purpose.</p>
-          </div>
-
-          <label for="acc2" class="accordion-tab">
-            Mexant Crypto Investing
-            <span class="icon">&#8250;</span>
-          </label>
-          <div class="accordion-content">
-            <p>Mexant HTML5 Template is available to download 100% free of charge. This CSS layout is based on Boostrap 5 framework.<br><br>Anyone can edit and use this layout for all professional websites. Thank you for visiting TemplateMo website.</p>
-          </div>
-
-          <label for="acc3" class="accordion-tab">
-            Cryptocurrency Investments
-            <span class="icon">&#8250;</span>
-          </label>
-          <div class="accordion-content">
-            <p>Ut dictum vehicula massa, ac pharetra leo tincidunt eu. Phasellus in tristique magna, ac gravida leo.<br><br>Integer sed lorem sapien. Ut viverra mauris sed lobortis commodo. Mauris scelerisque venenatis justo, sed interdum sem.</p>
-          </div>
+        <!-- Tab 1 -->
+        <label for="acc1" class="cursor-pointer py-4 px-6 bg-gray-100 rounded-t-lg border border-b-0 peer-checked/acc1:bg-blue-500 peer-checked/acc1:text-white transition">
+          Mexant Financial Planning
+        </label>
+        <div class="hidden peer-checked/acc1:block px-6 py-4 border border-t-0 rounded-b-lg">
+          <p>You will see a bunch of free CSS templates when you search on Google. TemplateMo website is probably the best one because it is 100% free.<br><br>We do not ask you anything in return. You are free to use our templates for any purpose.</p>
         </div>
 
+        <!-- Tab 2 -->
+        <label for="acc2" class="cursor-pointer py-4 px-6 bg-gray-100 border border-b-0 peer-checked/acc2:bg-blue-500 peer-checked/acc2:text-white transition">
+          Mexant Crypto Investing
+        </label>
+        <div class="hidden peer-checked/acc2:block px-6 py-4 border border-t-0">
+          <p>Mexant HTML5 Template is available to download 100% free of charge. This CSS layout is based on Bootstrap 5 framework.<br><br>Anyone can edit and use this layout for all professional websites. Thank you for visiting TemplateMo website.</p>
+        </div>
+
+        <!-- Tab 3 -->
+        <label for="acc3" class="cursor-pointer py-4 px-6 bg-gray-100 border border-b-0 peer-checked/acc3:bg-blue-500 peer-checked/acc3:text-white transition">
+          Cryptocurrency Investments
+        </label>
+        <div class="hidden peer-checked/acc3:block px-6 py-4 border border-t-0 rounded-b-lg">
+          <p>Ut dictum vehicula massa, ac pharetra leo tincidunt eu. Phasellus in tristique magna, ac gravida leo.<br><br>Integer sed lorem sapien. Ut viverra mauris sed lobortis commodo. Mauris scelerisque venenatis justo, sed interdum sem.</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-  <section class="simple-cta">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5">
-          <h4>Business <em>Solutions</em> and <strong>Crypto</strong> Investments</h4>
-        </div>
-        <div class="col-lg-7">
-          <div class="buttons">
-            <div class="green-button">
-              <a href="#">Discover More</a>
-            </div>
-            <div class="orange-button">
-              <a href="#">Contact Us</a>
-            </div>
-          </div>
-        </div>
+
+  <section class="py-16 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
+      
+      <!-- Heading -->
+      <div class="lg:w-5/12 text-center lg:text-left">
+        <h4 class="text-2xl md:text-3xl font-semibold text-gray-800">
+          Business <em class="italic text-blue-600">Solutions</em> and <strong class="font-bold text-orange-500">Crypto</strong> Investments
+        </h4>
+      </div>
+
+      <!-- Buttons -->
+      <div class="lg:w-7/12 flex flex-col sm:flex-row items-center justify-center lg:justify-end gap-4">
+        <a href="#" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
+          Discover More
+        </a>
+        <a href="#" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
+          Contact Us
+        </a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="what-we-do">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5">
-          <div class="left-content">
-            <h4>Please tell us about your idea and how you want it to be</h4>
-            <p>If you need more HTML templates, you can try visiting TooCSS blog and Tooplate websites. You can get many good templates on those websites.<br><br>Nulla non placerat neque, a gravida elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi sed dolor condimentum tellus commodo volutpat non malesuada turpis.</p>
-            <div class="green-button">
-              <a href="contact-us.html">Discover More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="right-items">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="item">
-                  <em>01</em>
-                  <h4>First Step</h4>
-                  <p>Pellentesque ipsum elit, congue a sapien laoreet, pellentesque ultricies risus.</p>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="item">
-                  <em>02</em>
-                  <h4>Second Step</h4>
-                  <p>Pellentesque ipsum elit, congue a sapien laoreet, pellentesque ultricies risus.</p>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="item">
-                  <em>03</em>
-                  <h4>Third Step</h4>
-                  <p>Pellentesque ipsum elit, congue a sapien laoreet, pellentesque ultricies risus.</p>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="item">
-                  <em>04</em>
-                  <h4>Fourth Step</h4>
-                  <p>Pellentesque ipsum elit, congue a sapien laoreet, pellentesque ultricies risus.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+
+  <section class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col lg:flex-row gap-12">
+      
+      <!-- Left Content -->
+      <div class="lg:w-5/12">
+        <div class="space-y-6">
+          <h4 class="text-2xl font-semibold text-gray-800">
+            Please tell us about your idea and how you want it to be
+          </h4>
+          <p class="text-gray-600 leading-relaxed">
+            If you need more HTML templates, you can try visiting TooCSS blog and Tooplate websites. You can get many good templates on those websites.<br><br>
+            Nulla non placerat neque, a gravida elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi sed dolor condimentum tellus commodo volutpat non malesuada turpis.
+          </p>
+          <a href="contact-us.html" class="inline-block bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-6 rounded-lg transition duration-300">
+            Discover More
+          </a>
         </div>
       </div>
-    </div>
-  </section>
 
-  <section class="partners">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-2 col-sm-4 col-6">
-          <div class="item">
-            <img src="assets/images/client-01.png" alt="">
-          </div>
-        </div>
-        <div class="col-lg-2 col-sm-4 col-6">
-          <div class="item">
-            <img src="assets/images/client-01.png" alt="">
-          </div>
-        </div>
-        <div class="col-lg-2 col-sm-4 col-6">
-          <div class="item">
-            <img src="assets/images/client-01.png" alt="">
-          </div>
-        </div>
-        <div class="col-lg-2 col-sm-4 col-6">
-          <div class="item">
-            <img src="assets/images/client-01.png" alt="">
-          </div>
-        </div>
-        <div class="col-lg-2 col-sm-4 col-6">
-          <div class="item">
-            <img src="assets/images/client-01.png" alt="">
-          </div>
-        </div>
-        <div class="col-lg-2 col-sm-4 col-6">
-          <div class="item">
-            <img src="assets/images/client-01.png" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <p>Copyright © 2022 Mexant Co., Ltd. All Rights Reserved. 
+      <!-- Right Items -->
+      <div class="lg:w-7/12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           
-          <br>Designed by <a title="CSS Templates" rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+          <!-- Item 1 -->
+          <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-md transition">
+            <em class="text-xl text-green-600 font-bold not-italic">01</em>
+            <h4 class="text-lg font-semibold text-gray-800 mt-2">First Step</h4>
+            <p class="text-gray-600 mt-2">Pellentesque ipsum elit, congue a sapien laoreet, pellentesque ultricies risus.</p>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-md transition">
+            <em class="text-xl text-green-600 font-bold not-italic">02</em>
+            <h4 class="text-lg font-semibold text-gray-800 mt-2">Second Step</h4>
+            <p class="text-gray-600 mt-2">Pellentesque ipsum elit, congue a sapien laoreet, pellentesque ultricies risus.</p>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-md transition">
+            <em class="text-xl text-green-600 font-bold not-italic">03</em>
+            <h4 class="text-lg font-semibold text-gray-800 mt-2">Third Step</h4>
+            <p class="text-gray-600 mt-2">Pellentesque ipsum elit, congue a sapien laoreet, pellentesque ultricies risus.</p>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-md transition">
+            <em class="text-xl text-green-600 font-bold not-italic">04</em>
+            <h4 class="text-lg font-semibold text-gray-800 mt-2">Fourth Step</h4>
+            <p class="text-gray-600 mt-2">Pellentesque ipsum elit, congue a sapien laoreet, pellentesque ultricies risus.</p>
+          </div>
+
         </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+ <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 place-items-center">
+        <div class="item">
+          <img src="assets/images/client-01.png" alt="Client Logo" class="w-full h-auto object-contain max-h-16">
+        </div>
+        <div class="item">
+          <img src="assets/images/client-01.png" alt="Client Logo" class="w-full h-auto object-contain max-h-16">
+        </div>
+        <div class="item">
+          <img src="assets/images/client-01.png" alt="Client Logo" class="w-full h-auto object-contain max-h-16">
+        </div>
+        <div class="item">
+          <img src="assets/images/client-01.png" alt="Client Logo" class="w-full h-auto object-contain max-h-16">
+        </div>
+        <div class="item">
+          <img src="assets/images/client-01.png" alt="Client Logo" class="w-full h-auto object-contain max-h-16">
+        </div>
+        <div class="item">
+          <img src="assets/images/client-01.png" alt="Client Logo" class="w-full h-auto object-contain max-h-16">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+ 
+
+   <footer class="bg-gray-900 text-white py-8">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center">
+        <p class="text-sm">
+          &copy; 2022 Mexant Co., Ltd. All Rights Reserved.
+          <br />
+          Designed by
+          <a href="https://templatemo.com" target="_blank" rel="sponsored" class="text-blue-400 hover:underline">
+            TemplateMo
+          </a>
+        </p>
       </div>
     </div>
   </footer>
+<script>
+  const toggleBtn = document.getElementById('mobile-menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
 
-  <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <script src="assets/js/isotope.min.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-
-    <script src="assets/js/tabs.js"></script>
-    <script src="assets/js/swiper.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script>
-        var interleaveOffset = 0.5;
-
-      var swiperOptions = {
-        loop: true,
-        speed: 1000,
-        grabCursor: true,
-        watchSlidesProgress: true,
-        mousewheelControl: true,
-        keyboardControl: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev"
-        },
-        on: {
-          progress: function() {
-            var swiper = this;
-            for (var i = 0; i < swiper.slides.length; i++) {
-              var slideProgress = swiper.slides[i].progress;
-              var innerOffset = swiper.width * interleaveOffset;
-              var innerTranslate = slideProgress * innerOffset;
-              swiper.slides[i].querySelector(".slide-inner").style.transform =
-                "translate3d(" + innerTranslate + "px, 0, 0)";
-            }      
-          },
-          touchStart: function() {
-            var swiper = this;
-            for (var i = 0; i < swiper.slides.length; i++) {
-              swiper.slides[i].style.transition = "";
-            }
-          },
-          setTransition: function(speed) {
-            var swiper = this;
-            for (var i = 0; i < swiper.slides.length; i++) {
-              swiper.slides[i].style.transition = speed + "ms";
-              swiper.slides[i].querySelector(".slide-inner").style.transition =
-                speed + "ms";
-            }
-          }
-        }
-      };
-
-      var swiper = new Swiper(".swiper-container", swiperOptions);
-    </script>
-
+  toggleBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
   </body>
 </html>
